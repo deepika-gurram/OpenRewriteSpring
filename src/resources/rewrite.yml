@@ -1,0 +1,6 @@
+type: recipe
+name: org.openrewrite.java.spring.Recipes
+recipes:
+    - org.openrewrite.java.spring.ReplaceControllerWithRestController
+    - org.openrewrite.java.spring.RequestMappingToMethodAnnotations
+	 

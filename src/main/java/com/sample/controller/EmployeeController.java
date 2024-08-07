@@ -16,7 +16,7 @@ import com.sample.entity.EmployeeEntity;
 import com.sample.service.EmployeeService;
 
 @Controller
-@RequestMapping("/employee")
+//@RequestMapping("/employee")
 public class EmployeeController {
 	
 	@Autowired
@@ -46,6 +46,12 @@ public class EmployeeController {
 	public EmployeeEntity getUserById(@PathVariable Long id) {
 		
 		return empService.getUserById(id);
+	}
+	@RequestMapping(method = RequestMethod.GET)
+	@ResponseBody
+	public String getMessage()
+	{
+		return "Welcome To OpenRewrite...";
 	}
 
 }

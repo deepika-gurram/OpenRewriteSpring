@@ -33,7 +33,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	@Override
 	public List<EmployeeEntity> findAll() {
 		// TODO Auto-generated method stub
-		TypedQuery<EmployeeEntity>query=entityManager.createQuery("SELECT e from EmployeeEntity e",EmployeeEntity.class);
+		TypedQuery<EmployeeEntity>query=entityManager.createQuery("SELECT e from EmployeeEntity e", EmployeeEntity.class);
 		return query.getResultList();
 	}
 	

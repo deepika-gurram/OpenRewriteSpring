@@ -10,15 +10,15 @@ import com.sample.dao.EmployeeDAO;
 import com.sample.entity.EmployeeEntity;
 import com.sample.service.EmployeeService;
 
-public class saveEmployeeTest 
+class saveEmployeeTest 
 {
     
 	@InjectMocks
 	private EmployeeDAO empDao;
 	private EmployeeService empService;
-	
+
 	@Test
-	public void saveEmployee()
+	void saveEmployee()
 	{
 		EmployeeEntity empEntity=new EmployeeEntity();
 		empEntity.setEmpId(1L);
